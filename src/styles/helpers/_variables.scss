@@ -1,0 +1,69 @@
+// colors
+
+//primary
+$primary-1:#03a9f4;
+$primary-2:#f75e2e;
+$primary-3:#ecfa4d;
+$primary-4:#656a70;
+
+//light 1 level
+
+$pr1-light-1:mix($primary-1, #fff, 60%);
+$pr2-light-1:mix($primary-2, #fff, 60%);
+$pr3-light-1:mix($primary-3, #fff, 60%);
+$pr4-light-1:mix($primary-4, #fff, 60%);
+
+//darken 1 level
+
+$pr1-dark-1:mix($primary-1, #000, 80%);
+$pr2-dark-1:mix($primary-2, #000, 80%);
+$pr3-dark-1:mix($primary-3, #000, 80%);
+$pr4-dark-1:mix($primary-4, #000, 80%);
+
+//light 2 level
+
+$pr1-light-2:mix($primary-1, #fff, 25%);
+$pr2-light-2:mix($primary-2, #fff, 25%);
+$pr3-light-2:mix($primary-3, #fff, 25%);
+$pr4-light-2:mix($primary-4, #fff, 25%);
+
+//darken 2 level
+
+$pr1-dark-2:mix($primary-1, #000, 50%);
+$pr2-dark-2:mix($primary-2, #000, 50%);
+$pr3-dark-2:mix($primary-3, #000, 50%);
+$pr4-dark-2:mix($primary-4, #000, 50%);
+
+//light 3 level
+
+$pr1-light-3:mix($primary-1, #fff, 10%);
+$pr2-light-3:mix($primary-2, #fff, 10%);
+$pr3-light-3:mix($primary-3, #fff, 10%);
+$pr4-light-3:mix($primary-4, #fff, 10%);
+
+//darken 3 level
+
+$pr1-dark-3:mix($primary-1, #000, 30%);
+$pr2-dark-3:mix($primary-2, #000, 30%);
+$pr3-dark-3:mix($primary-3, #000, 30%);
+$pr4-dark-3:mix($primary-4, #000, 30%);
+
+// fonts
+$font-p:'Poppins';
+$font-p-r:'Poppins-Regular';
+$font-p-m:'Poppins-Medium';
+$font-p-l:'Poppins-Light';
+$font-p-sb:'Poppins-SemiBold';
+$font-os-b:'OpenSans-Bold';
+$font-os-bi:'OpenSans-BoldItalic';
+$font-os-sbi:'OpenSans-SemiboldItalic';
+$font-os-li:'OpenSansLight-Italic';
+$font-os-l:'OpenSans-Light';
+$font-os-eb:'OpenSans-Extrabold';
+$font-os-ebi:'OpenSans-ExtraboldItalic';
+$font-os-i:'OpenSans-Italic';
+$font-os-sb:'OpenSans-Semibold';
+$font-os:'OpenSans';
+$font-l-r:'Lato-Regular';
+$font-ms-500:'MuseoSans-500';
+$font-g:'Gabriola';
