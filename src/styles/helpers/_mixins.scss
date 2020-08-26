@@ -1,0 +1,31 @@
+// %box-shadow{
+//     box-shadow: 5px 5px 10px black;
+//     border-radius: 30px;
+//     background-color: lightpink;
+//     border: groove darkmagenta 5px;
+//     padding: 20px;
+//     text-align: center;
+// }
+
+// %fonts{
+//     font-size: 35px;
+//     font-family: $font-bold;
+//     color: $pr4-dark-3;
+// }
+
+@mixin font($size, $font, $color:$pr4-dark-3) {
+    font-size: $size;
+    font-family: $font;
+    color: $color;
+    padding: 10px;
+}
+
+@mixin btn($width, $bg, $height:50px, $font:$font-medium, $border:none, $color:$light) {
+    width: $width;
+    background-color: $bg;
+    height: $height;
+    font-family: $font;
+    color: $color;
+    border: $border;
+    border-radius: 3px;
+}

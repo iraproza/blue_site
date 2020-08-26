@@ -1,5 +1,243 @@
-h1, h2, h3, h4, h5, h6, ul, body {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+body {
     margin: 0;
     padding: 0;
 }
 
+h1 {
+    @include font(35px, $font-bold);
+}
+
+h2 {
+    @include font(33px, $font-medium, $pr4-dark-2);
+
+    &:hover {
+        color: $light;
+        background-color: $primary-1;
+    }
+}
+
+h3 {
+    @include font(27px, $font-medium);
+}
+
+h4 {
+    @include font(22px, $font-medium);
+}
+
+h5 {
+    @include font(17px, $font-medium);
+}
+
+h6 {
+    @include font(15px, $font-medium);
+}
+
+p {
+    @include font(14px, $font-regular, $pr4-dark-1);
+}
+
+.subtitle {
+    @include font(20px, $font-medium, $pr4-dark-1);
+
+    &:hover {
+        color: $light;
+        background-color: $primary-1;
+        padding-left: 15px;
+    }
+}
+
+.quotation {
+    @include font(17px, $font-regular, $primary-1);
+    border-left: 2px solid $primary-1;
+    background-color: $pr1-light-3;
+    padding: 10px 30px;
+    margin-left: 0px;
+}
+
+.list-style {
+    @include font(15px, $font-medium, $pr4-dark-1);
+    list-style-type: none;
+
+    li {
+        padding-bottom: 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: '';
+            display: block;
+            position: relative;
+            width: 13px;
+            height: 13px;
+            background-color: $primary-1;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 7px;
+            height: 4px;
+            border: solid 2px $light;
+            border-width: 0 0 2px 2px;
+            transform: rotate(-45deg);
+            left: 3px;
+            top: 10px;
+        }
+    }
+
+
+}
+
+.btn-1 {
+    @include btn(220px, $primary-2, 50px, $font-semibold);
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $pr2-light-1;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+    }
+}
+
+.btn-2 {
+    @include btn(280px, $primary-1, 50px);
+
+    &:hover {
+        background-color: $pr1-light-1;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+    }
+}
+
+.btn-3 {
+    @include btn(200px, $primary-1, 50px);
+
+    &:hover {
+        background-color: $pr1-light-1;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+    }
+}
+
+.btn-4 {
+    @include btn(220px, $light, 50px, $font-semibold, 1px solid $primary-2, $color:$primary-2);
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $pr2-light-1;
+        color: $light;
+        border: none;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+        color: $light;
+        border: none;
+    }
+}
+
+.btn-5 {
+    @include btn(200px, $light, 50px, $font-medium, 1px solid $primary-1, $color:$primary-1);
+
+    &:hover {
+        background-color: $pr1-light-1;
+        color: $light;
+        border: none;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+        color: $light;
+        border: none;
+    }
+}
+
+.button-1 {
+    @include btn(150px, $primary-2, 40px);
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $pr2-light-1;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+    }
+}
+
+.button-2 {
+    @include btn(170px, $primary-1, 40px);
+
+    &:hover {
+        background-color: $pr1-light-1;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+    }
+}
+
+.button-3 {
+    @include btn(150px, $primary-1, 40px);
+
+    &:hover {
+        background-color: $pr1-light-1;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+    }
+}
+
+.button-4 {
+    @include btn(150px, $light, 40px, $font-medium, 1px solid $primary-2, $color:$primary-2);
+
+    &:hover {
+        background-color: $pr2-light-1;
+        color: $light;
+        border: none;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+        color: $light;
+        border: none;
+    }
+}
+
+.button-5 {
+    @include btn(150px, $light, 40px, $font-medium, 1px solid $primary-1, $color:$primary-1);
+
+    &:hover {
+        background-color: $pr1-light-1;
+        color: $light;
+        border: none;
+    }
+
+    &[disabled] {
+        background-color: $pr4-light-2;
+        color: $light;
+        border: none;
+    }
+}
+
+button {
+    margin-bottom: 20px;
+}

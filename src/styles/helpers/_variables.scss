@@ -5,6 +5,8 @@ $primary-1:#03a9f4;
 $primary-2:#f75e2e;
 $primary-3:#ecfa4d;
 $primary-4:#656a70;
+$light:#ffffff;
+$dark:#000000;
 
 //light 1 level
 
@@ -49,21 +51,31 @@ $pr3-dark-3:mix($primary-3, #000, 30%);
 $pr4-dark-3:mix($primary-4, #000, 30%);
 
 // fonts
-$font-p:'Poppins';
-$font-p-r:'Poppins-Regular';
-$font-p-m:'Poppins-Medium';
-$font-p-l:'Poppins-Light';
-$font-p-sb:'Poppins-SemiBold';
-$font-os-b:'OpenSans-Bold';
-$font-os-bi:'OpenSans-BoldItalic';
-$font-os-sbi:'OpenSans-SemiboldItalic';
-$font-os-li:'OpenSansLight-Italic';
-$font-os-l:'OpenSans-Light';
-$font-os-eb:'OpenSans-Extrabold';
-$font-os-ebi:'OpenSans-ExtraboldItalic';
-$font-os-i:'OpenSans-Italic';
-$font-os-sb:'OpenSans-Semibold';
-$font-os:'OpenSans';
-$font-l-r:'Lato-Regular';
-$font-ms-500:'MuseoSans-500';
-$font-g:'Gabriola';
+
+$font-bold:'Poppins-Bold';
+$font-regular:'Poppins-Regular';
+$font-medium:'Poppins-Medium';
+$font-light:'Poppins-Light';
+$font-semibold:'Poppins-SemiBold';
+
+// 2 font
+
+$font-2-bold:'OpenSans-Bold';
+$font-2-bolditalic:'OpenSans-BoldItalic';
+$font-2-semibolditalic:'OpenSans-SemiboldItalic';
+$font-2-lightitalic:'OpenSansLight-Italic';
+$font-2-light:'OpenSans-Light';
+$font-2-extrabold:'OpenSans-Extrabold';
+$font-2-extrabolditalic:'OpenSans-ExtraboldItalic';
+$font-2-italic:'OpenSans-Italic';
+$font-2-semibold:'OpenSans-Semibold';
+$font-2-regular:'OpenSans';
+
+// 3 font
+$font-3-regular:'Lato-Regular';
+
+
+$font-4:'MuseoSans-500';
+
+// font logo
+$font-logo-1:'Gabriola';
