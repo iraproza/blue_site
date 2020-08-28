@@ -29,3 +29,11 @@
     border: $border;
     border-radius: 3px;
 }
+
+@mixin input($bgc, $border:1px solid $pr4-light-2, $width:320px, $height:50px, $border-radius: 5px) {
+    background-color: $bgc;
+    border: $border;
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+}

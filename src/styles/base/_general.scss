@@ -95,8 +95,6 @@ p {
             top: 10px;
         }
     }
-
-
 }
 
 .btn-1 {
@@ -241,3 +239,68 @@ p {
 button {
     margin-bottom: 20px;
 }
+
+input {
+    background-color: $light;
+    border: none;
+}
+
+.error-enter {
+    display: inline-block;
+    position: relative;
+
+    input {
+        border: 1px solid $primary-2;
+        background-color: $light;
+        color: $primary-2;
+        width: 320px;
+        height: 50px;
+        font-family: $font-regular;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 15px;
+        background-color: $primary-2;
+        position: absolute;
+        right: 18px;
+        transform: rotate(45deg);
+        top: 18px;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 15px;
+        background-color: $primary-2;
+        position: absolute;
+        right: 18px;
+        transform: rotate(-45deg);
+        top: 18px;
+    }
+}
+
+.input-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    @include input ($pr4-light-3);
+    @include font(13px, $font-regular);
+
+    &:hover {
+        @include input ($light);
+    }
+
+    &:focus {
+        @include input ($light, 1px solid $primary-1);
+        outline: none;
+    }
+
+    &:active {
+        @include input ($light, 1px solid $primary-1);
+    }
+}
+
+.input-dropdown {}
