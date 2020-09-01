@@ -168,7 +168,7 @@ p {
 }
 
 .button-1 {
-    @include btn(150px, $primary-2, 40px);
+    @include btn(100px, $primary-2, 40px);
     text-transform: uppercase;
 
     &:hover {
@@ -193,7 +193,7 @@ p {
 }
 
 .button-3 {
-    @include btn(150px, $primary-1, 40px);
+    @include btn(100px, $pr1-dark-1, 40px);
 
     &:hover {
         background-color: $pr1-light-1;

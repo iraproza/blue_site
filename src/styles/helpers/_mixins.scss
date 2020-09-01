@@ -17,7 +17,6 @@
     font-size: $size;
     font-family: $font;
     color: $color;
-    padding: 10px;
 }
 
 @mixin btn($width, $bg, $height:50px, $font:$font-medium, $border:none, $color:$light) {
