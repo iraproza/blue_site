@@ -10,14 +10,14 @@
     .name-company {
         display: flex;
         flex-direction: column;
-        @include font(20px, $font-3-regular, );
+        @include font(20px, $font-logo-1, $light);
 
         &>span {
             @include font(20px, $font-logo-1, $primary-3);
 
             &>span:first-child {
                 text-transform: uppercase;
-                @include font(20px, $font-medium, $primary-3);
+                @include font(20px,$font-logo-1, $primary-3);
             }
             &>span:last-child {
                 @include font(20px, $font-light, $light);
@@ -30,65 +30,64 @@
 .header-menu {
     display: flex;
     justify-content: space-between;
-}
-
-.burger {
-    display: inline-block;
-
-    &:hover,
-    &:focus {
-        box-shadow: none;
-        outline: none;
-    }
-
-    &:hover span,
-    &:focus span {
+    .burger {
         display: inline-block;
-        width: 22px;
-        height: 3px;
-        background-color: $primary-4;
-        position: relative;
-        border-radius: 15px;
 
-        &::before,
-        &::after {
-            content: '';
+        &:hover,
+        &:focus {
+            box-shadow: none;
+            outline: none;
+        }
+
+        &:hover span,
+        &:focus span {
             display: inline-block;
             width: 22px;
             height: 3px;
             background-color: $primary-4;
-            position: absolute;
+            position: relative;
             border-radius: 15px;
+
+            &::before,
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 22px;
+                height: 3px;
+                background-color: $primary-4;
+                position: absolute;
+                border-radius: 15px;
+            }
         }
-    }
 
-    span {
-        display: inline-block;
-        width: 22px;
-        height: 3px;
-        background-color: $dark;
-        position: relative;
-        border-radius: 15px;
-
-        &::before,
-        &::after {
-            content: '';
+        span {
             display: inline-block;
             width: 22px;
             height: 3px;
             background-color: $dark;
-            position: absolute;
+            position: relative;
             border-radius: 15px;
-        }
 
-        &::before {
-            top: 7px;
-            left: 0;
-        }
+            &::before,
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 22px;
+                height: 3px;
+                background-color: $dark;
+                position: absolute;
+                border-radius: 15px;
+            }
 
-        &::after {
-            top: -7px;
-            left: 0;
+            &::before {
+                top: 7px;
+                left: 0;
+            }
+
+            &::after {
+                top: -7px;
+                left: 0;
+            }
         }
     }
 }
