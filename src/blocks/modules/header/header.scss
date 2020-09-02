@@ -1,28 +1,48 @@
 .bg-header {
     background-color: $primary-1;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .logo {
-    display: flex;
-    flex-direction: row;
+
+    &:hover{
+        text-decoration: none;
+    }
+
+    img{
+        max-width: 100%;
+        float: left;
+    }
 
     .name-company {
+        @include font(20px, $font-regular, $light);
+        position: relative;
         display: flex;
-        flex-direction: column;
-        @include font(20px, $font-logo-1, $light);
 
-        &>span {
-            @include font(20px, $font-logo-1, $primary-3);
+        &>div {
+            @include font(39px, $font-logo-1, $light);
+            line-height: 40px;
+            padding-top: 10px;
+            padding-left: 5px;
 
-            &>span:first-child {
+            &>span:nth-child(2) {
+                @include font(20px,$font-medium, $primary-3);
                 text-transform: uppercase;
-                @include font(20px,$font-logo-1, $primary-3);
-            }
-            &>span:last-child {
-                @include font(20px, $font-light, $light);
             }
 
+            &>span:last-child {
+                @include font(13px, $font-light, $light);
+            }
+        }
+
+        .name-service{
+            @include font(13px,$font-2-regular, $light);
+            line-height: 18px;
+            position: absolute;
+            bottom: -5px;
+            padding-left: 5px;
+            letter-spacing: .5px;
         }
     }
 }
@@ -30,6 +50,29 @@
 .header-menu {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+
+    .sign-in-btn{
+        text-transform: uppercase;
+        width: 100px;
+    }
+    .order-btn{
+        width: 100px;
+    }
+
+    button{
+        margin:0px;
+        @include font(14px,$font-semibold, $light);
+        text-transform: uppercase;
+    }
+
+    .help-btn{
+        display: flex;
+        align-items: center;
+        @include font(14px,$font-semibold, $light);
+        text-transform: uppercase;
+    }
+
     .burger {
         display: inline-block;
 
@@ -64,7 +107,7 @@
             display: inline-block;
             width: 22px;
             height: 3px;
-            background-color: $dark;
+            background-color: $light;
             position: relative;
             border-radius: 15px;
 
@@ -74,7 +117,7 @@
                 display: inline-block;
                 width: 22px;
                 height: 3px;
-                background-color: $dark;
+                background-color: $light;
                 position: absolute;
                 border-radius: 15px;
             }
@@ -89,5 +132,7 @@
                 left: 0;
             }
         }
+
     }
 }
+
