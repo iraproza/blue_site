@@ -108,6 +108,9 @@ p {
     &[disabled] {
         background-color: $pr4-light-2;
     }
+    &:focus {
+        outline: none;
+    }
 }
 
 .btn-2 {
@@ -120,6 +123,9 @@ p {
     &[disabled] {
         background-color: $pr4-light-2;
     }
+    &:focus {
+        outline: none;
+    }
 }
 
 .btn-3 {
@@ -131,6 +137,9 @@ p {
 
     &[disabled] {
         background-color: $pr4-light-2;
+    }
+    &:focus {
+        outline: none;
     }
 }
 
@@ -149,6 +158,9 @@ p {
         color: $light;
         border: none;
     }
+    &:focus {
+        outline: none;
+    }
 }
 
 .btn-5 {
@@ -165,6 +177,9 @@ p {
         color: $light;
         border: none;
     }
+    &:focus {
+        outline: none;
+    }
 }
 
 .button-1 {
@@ -178,6 +193,9 @@ p {
     &[disabled] {
         background-color: $pr4-light-2;
     }
+    &:focus {
+        outline: none;
+    }
 }
 
 .button-2 {
@@ -190,6 +208,9 @@ p {
     &[disabled] {
         background-color: $pr4-light-2;
     }
+    &:focus {
+        outline: none;
+    }
 }
 
 .button-3 {
@@ -201,6 +222,9 @@ p {
 
     &[disabled] {
         background-color: $pr4-light-2;
+    }
+    &:focus {
+        outline: none;
     }
 }
 
@@ -218,6 +242,9 @@ p {
         color: $light;
         border: none;
     }
+    &:focus {
+        outline: none;
+    }
 }
 
 .button-5 {
@@ -234,10 +261,15 @@ p {
         color: $light;
         border: none;
     }
+    &:focus {
+        outline: none;
+    }
 }
 
 button {
-    margin-bottom: 20px;
+    &:focus {
+        outline: none;
+    }
 }
 
 input {

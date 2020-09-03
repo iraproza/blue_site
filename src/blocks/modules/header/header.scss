@@ -5,7 +5,6 @@
 }
 
 .logo {
-
     &:hover{
         text-decoration: none;
     }
@@ -43,6 +42,7 @@
             bottom: -5px;
             padding-left: 5px;
             letter-spacing: .5px;
+            width: 250px;
         }
     }
 }
@@ -55,84 +55,259 @@
     .sign-in-btn{
         text-transform: uppercase;
         width: 100px;
+        @include font(14px,$font-semibold, $light);
     }
     .order-btn{
         width: 100px;
+        @include font(14px,$font-semibold, $light);
+        margin-left: 10px;
     }
 
     button{
         margin:0px;
-        @include font(14px,$font-semibold, $light);
+        @include font(14px,$font-4, $light);
         text-transform: uppercase;
     }
 
     .help-btn{
         display: flex;
         align-items: center;
-        @include font(14px,$font-semibold, $light);
+        @include font(14px,$font-4, $light);
         text-transform: uppercase;
     }
 
-    .burger {
-        display: inline-block;
+    .tel{
+        border: solid 2px $light;
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        text-align: center;
+        margin: 6px 12px;
 
-        &:hover,
-        &:focus {
-            box-shadow: none;
-            outline: none;
-        }
-
-        &:hover span,
-        &:focus span {
-            display: inline-block;
-            width: 22px;
-            height: 3px;
-            background-color: $primary-4;
-            position: relative;
-            border-radius: 15px;
-
-            &::before,
-            &::after {
-                content: '';
-                display: inline-block;
-                width: 22px;
-                height: 3px;
-                background-color: $primary-4;
-                position: absolute;
-                border-radius: 15px;
+        &:hover{
+            border-color: $pr1-dark-1;
+            background-color: $pr1-dark-1;
+            transition: 0.2s;
+            svg{
+                fill: $pr1-light-3;
             }
         }
 
-        span {
+        a{
+            width: 34px;
+            height: 34px;
+        }
+    }
+
+    .dropdown-toggle::after {
+        margin-left: 10px;
+        margin-top: 2px;
+    }
+
+    .about-us-btn:hover,
+    .services-btn:hover,
+    .help-btn:hover{
+        color: $pr1-dark-2;
+        box-shadow: none;
+    }
+    .about-us-btn:focus,
+    .services-btn:focus,
+    .help-btn:focus{
+        box-shadow: none;
+    }
+}
+
+.burger {
+    display: inline-block;
+    padding-top: 3px;
+
+    &:hover,
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+
+    &:hover span,
+    &:focus span {
+        display: inline-block;
+        width: 22px;
+        height: 3px;
+        background-color: $pr1-light-2;
+        position: relative;
+        border-radius: 15px;
+
+        &::before,
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 22px;
+            height: 3px;
+            background-color: $pr1-light-2;
+            position: absolute;
+            border-radius: 15px;
+        }
+    }
+
+    span {
+        display: inline-block;
+        width: 22px;
+        height: 3px;
+        background-color: $light;
+        position: relative;
+        border-radius: 15px;
+
+        &::before,
+        &::after {
+            content: '';
             display: inline-block;
             width: 22px;
             height: 3px;
             background-color: $light;
-            position: relative;
+            position: absolute;
             border-radius: 15px;
-
-            &::before,
-            &::after {
-                content: '';
-                display: inline-block;
-                width: 22px;
-                height: 3px;
-                background-color: $light;
-                position: absolute;
-                border-radius: 15px;
-            }
-
-            &::before {
-                top: 7px;
-                left: 0;
-            }
-
-            &::after {
-                top: -7px;
-                left: 0;
-            }
         }
 
+        &::before {
+            top: 7px;
+            left: 0;
+        }
+
+        &::after {
+            top: -7px;
+            left: 0;
+        }
     }
 }
 
+.dropleft{
+    .burger-menu{
+        button{
+        @include font(14px, $font-regular, $primary-1);
+        text-transform: none;
+        }
+    }
+
+    .show{
+        transform: translate3d(-157px, 38px, 0px)!important;
+    }
+}
+
+.menu-header-xs{
+    text-align: center;
+    
+    .sign-in-btn{
+        text-transform: uppercase;
+        width: 100px;
+        @include font(14px,$font-semibold, $light);
+        margin-bottom: 10px;
+    }
+    .order-btn{
+        width: 100px;
+        @include font(14px,$font-semibold, $light);
+        margin-left: 0px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .logo {
+        img{
+            width: 45px;
+            float: left;
+            padding-top: 6px;
+        }
+
+        .name-company {
+            @include font(17px, $font-regular, $light);
+            position: relative;
+            display: flex;
+
+            &>div {
+                @include font(35px, $font-logo-1, $light);
+                line-height: 40px;
+                padding-top: 5px;
+                padding-left: 0px;
+
+                &>span:nth-child(2) {
+                    @include font(17px,$font-medium, $primary-3);
+                    text-transform: uppercase;
+                }
+
+                &>span:last-child {
+                    @include font(12px, $font-light, $light);
+                }
+            }
+                   
+            .name-service{
+                @include font(9px,$font-2-regular, $light);
+                line-height: 18px;
+                position: absolute;
+                bottom: -5px;
+                padding-left: 5px;
+                letter-spacing: .5px;
+                width: 200px;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .logo {
+        img{
+            max-width: 100%;
+            float: left;
+        }
+    
+        .name-company {
+            @include font(20px, $font-regular, $light);
+            position: relative;
+            display: flex;
+    
+            &>div {
+                @include font(39px, $font-logo-1, $light);
+                line-height: 40px;
+                padding-top: 10px;
+                padding-left: 5px;
+    
+                &>span:nth-child(2) {
+                    @include font(20px,$font-medium, $primary-3);
+                    text-transform: uppercase;
+                }
+    
+                &>span:last-child {
+                    @include font(13px, $font-light, $light);
+                }
+            }
+    
+            .name-service{
+                @include font(13px,$font-2-regular, $light);
+                line-height: 18px;
+                position: absolute;
+                bottom: -5px;
+                padding-left: 5px;
+                letter-spacing: .5px;
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px){
+    .logo {
+        .name-company {
+            .name-service{
+                @include font(10px,$font-2-regular, $light);
+                line-height: 18px;
+                position: absolute;
+                bottom: -5px;
+                padding-left: 5px;
+                letter-spacing: .5px;
+                width: 250px;
+            }
+        }
+    }
+    .burger {
+        padding-right: 0px;
+    }
+}
