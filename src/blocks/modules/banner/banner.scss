@@ -1,0 +1,73 @@
+.bg-banner{
+    background-color: $pr1-light-3;
+    background-image: url(../img/bg-banner.png);
+    background-repeat: no-repeat;
+    background-size: 125%;
+    background-position: -215px 10px;
+    ol{
+        justify-content: left;
+        margin-left: 0px;
+        top: 255px;
+        z-index: 1;
+        width: 100%;
+        height: 20px;
+
+        li{
+            width: 50px;
+            height: 2px;
+            margin-right: 0px;
+            margin-left: 0px;
+            background-color: $pr4-light-1;
+            border-top: 0;
+            border-top:10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+        .active{
+            background-color: $primary-2;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background-color: $primary-2;
+                top: -2px;
+
+            }
+        }
+    }
+    
+}
+
+.slide-bg{
+    position: relative;
+    padding-top: 135px;
+    padding-bottom: 13%;
+
+    .title-slide{
+        @include font(42px,$font-bold, $pr4-dark-2);
+        letter-spacing: 1px;
+        padding-left: 0px;
+        padding-bottom: 60px;
+        span{
+            @include font(42px,$font-bold, $primary-1);
+        }
+    }
+    p{
+        padding-left: 0px;
+        @include font(20px,$font-regular, $primary-4);
+        padding-bottom: 50px;
+        z-index: 3;
+    }
+    img{
+        position: absolute;
+        left: 67%;
+        top:-9%;
+        width: 315px;
+    }
+    button{
+
+        z-index: 4;
+    }
+}
