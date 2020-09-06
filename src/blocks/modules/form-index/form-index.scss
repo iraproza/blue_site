@@ -1,0 +1,39 @@
+.bg-form-index{
+    background-color: $primary-1;
+    position: relative;
+    top:-78px;
+    padding:25px 30px 35px 30px;
+    border-radius: 2px;
+}
+
+.form-index{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+   
+    div{
+        display: inline-block;
+
+        label{
+            color: $light;
+            @include font(14px,$font-medium, $light);
+            margin-bottom: 5px;
+        }
+    }
+    .input-dropdown{
+        width: 200px;
+    }
+    .number-pages li:nth-child(2) a {
+        width: 100px;
+
+        &:hover{
+            color: $pr4-dark-3;
+            background-color: $light;
+        }
+    }
+
+    button{
+        margin-right: 15px;  
+        margin-left: 15px;  
+    }
+}

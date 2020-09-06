@@ -114,7 +114,7 @@ p {
 }
 
 .btn-2 {
-    @include btn(280px, $primary-1, 50px);
+    @include btn(280px, $pr1-dark-1, 50px);
 
     &:hover {
         background-color: $pr1-light-1;
@@ -129,7 +129,7 @@ p {
 }
 
 .btn-3 {
-    @include btn(200px, $primary-1, 50px);
+    @include btn(200px, $pr1-dark-1, 50px);
 
     &:hover {
         background-color: $pr1-light-1;
@@ -199,7 +199,7 @@ p {
 }
 
 .button-2 {
-    @include btn(170px, $primary-1, 40px);
+    @include btn(170px, $pr1-dark-1, 40px);
 
     &:hover {
         background-color: $pr1-light-1;
@@ -356,36 +356,34 @@ input {
 }
 
 .number-pages {
-    ul {
-        display: flex;
+    display: flex;
 
-        li a {
-            @include input ($light, 1px solid $pr4-light-2, 50px, 50px);
-            line-height: 30px;
-            text-align: center;
-            @include font(13px, $font-regular, $primary-4);
+    li a {
+        @include input ($light, 1px solid $pr4-light-2, 50px, 50px);
+        line-height: 30px;
+        text-align: center;
+        @include font(13px, $font-regular, $primary-4);
 
-            &:focus {
-                box-shadow: 0px 0px 1px 0px black;
-            }
+        &:focus {
+            box-shadow: 0px 0px 1px 0px black;
         }
+    }
 
-        li:first-child a {
-            border-top-right-radius: 0px;
-            border-bottom-right-radius: 0px;
-            @include font(20px, $font-regular, $primary-4);
-        }
+    li:first-child a {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        @include font(20px, $font-regular, $primary-4);
+    }
 
-        li:last-child a {
-            border-top-left-radius: 0px;
-            border-bottom-left-radius: 0px;
-            @include font(20px, $font-regular, $primary-4);
-        }
+    li:last-child a {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        @include font(20px, $font-regular, $primary-4);
+    }
 
-        li:nth-child(2) a {
-            text-align: center;
-            @include input ($pr4-light-3, 1px solid $pr4-light-2, 250px, 50px, 0px);
-        }
+    li:nth-child(2) a {
+        text-align: center;
+        @include input ($pr4-light-3, 1px solid $pr4-light-2, 250px, 50px, 0px);
     }
 }
 
