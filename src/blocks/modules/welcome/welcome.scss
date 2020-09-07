@@ -1,13 +1,11 @@
 .welcome{
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 }
 
 .img-welcome{
     background-color: $pr1-light-3;
     display: flex;
     padding: 70px 50px 0px 50px;
-    width: 95%;
-    height: 100%;
     justify-content: center;
     margin-left: 15px;
 
@@ -36,5 +34,69 @@
 
     h1{
         padding-bottom: 35px;
+    }
+}
+
+@media (max-width:992px){
+    .welcome{
+        margin-bottom: 30px;
+    }
+    
+    .img-welcome{
+        display: inline-block;
+        padding: 70px 50px 0px 50px;
+        h3{
+            padding-left: 5px;
+            padding-top: 20px;
+            font-size: 22px;
+        }
+    
+        img{
+            width: 200px;
+        }
+    }
+    .info-welcome{
+        h6{
+            padding-bottom: 20px;
+        }
+        h1{
+            font-size: 28px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+
+@media (max-width:767px){
+    .welcome{
+        position: relative;
+        top: -15px;
+        margin-bottom: 0px;
+    }
+
+    .bg-welcome{
+        background-color: $pr1-light-3;
+    }
+    .img-welcome{
+        padding: 10px 50px 0px 50px;
+        h3{
+            padding-left: 0px;
+            padding-top: 13px;
+            font-size: 14px;
+        }
+        img{
+            width: 130px;
+        }
+    }
+    .info-welcome{
+        h6{
+            padding-top: 10px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        h1{
+            font-size: 24px;
+            text-align: center;
+        }
     }
 }

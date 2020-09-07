@@ -194,17 +194,19 @@
 
 .menu-header-xs{
     text-align: center;
-    
     .sign-in-btn{
-        text-transform: uppercase;
+        text-transform: uppercase!important;
         width: 100px;
         @include font(14px,$font-semibold, $light);
         margin-bottom: 10px;
+        color:$light!important;
     }
     .order-btn{
         width: 100px;
         @include font(14px,$font-semibold, $light);
         margin-left: 0px;
+        color:$light!important;
+        text-transform: uppercase!important;
     }
 }
 

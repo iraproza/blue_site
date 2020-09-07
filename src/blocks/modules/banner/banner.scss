@@ -94,9 +94,6 @@
 
 @media (max-width: 991px){
     .bg-banner{
-        background-color: $pr1-light-3;
-        background-image: url(../img/bg-banner.png);
-        background-repeat: no-repeat;
         background-size: 160%;
     }
     .slide-bg {
@@ -114,11 +111,66 @@
         }
         img{
             position: absolute;
-            top:13%;
+            top:27%;
             width: 250px;
         }
         button{
             margin-bottom: 20px;
         } 
+    }
+}
+
+@media (max-width: 767px){
+    .slide-bg {
+        margin-right:0px;
+        margin-left:0px;
+        padding-top: 30px;
+        .title-slide{
+            font-size: 24px;
+            padding-bottom:30px;
+            span{
+            font-size: 24px;
+            }
+        }
+        p{
+            font-size: 15px;
+        }
+        img{
+            top:33%;
+            left: 70%;
+            width: 175px;
+        }
+        button{
+            margin-bottom: 30px;
+        } 
+    }
+}
+
+@media (max-width: 574px){
+    .slide-bg{
+        padding-top: 20px;
+        .title-slide{
+            padding-bottom:20px;
+        }
+        p{
+            padding-bottom: 10px;
+        }
+        .slide-1{
+            div{
+            text-align: center;
+            }
+        } 
+    }
+
+}
+
+@media (max-width: 340px){
+    .slide-bg{
+        .title-slide{
+           font-size: 20px;
+           span{
+            font-size: 20px; 
+           }
+        }
     }
 }

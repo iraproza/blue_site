@@ -40,3 +40,126 @@
         margin-left: 15px;  
     }
 }
+
+@media (max-width: 1200px){
+    .form-index{
+        .input-dropdown{
+            width: 170px;
+        }
+
+        .number-pages li:nth-child(2) a {
+            width: 70px;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .form-index-block {
+        margin-top: -56px;
+    }
+    .form-index{
+        .input-dropdown{
+            width: 200px;
+        }
+
+        .number-pages li:nth-child(2) a {
+            width: 100px;
+        }
+
+        .number-pages-block{
+            margin-left: 10%;
+            margin-top: 15px;
+        }
+
+        button{
+            margin-right: 10%;
+        }
+    }
+}
+
+
+@media (max-width: 767px){
+    .form-index{
+        justify-content: center;
+        .input-dropdown{
+            width: 220px;
+        }
+
+        .number-pages li:nth-child(2) a {
+            width: 120px;
+        }
+        .number-pages-block{
+            margin-left: 0%;
+        }
+        button{
+            margin-top: 20px;
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+
+@media (max-width: 576px){
+    .form-index-block{
+        margin-top: -30px;
+    }
+    .bg-form-index{
+        padding-top: 15px;
+    }
+
+    .form-index{
+        >div{
+            text-align: center;
+            margin-top: 15px;
+        }
+        .input-dropdown{
+            width: 250px;
+        }
+
+        .number-pages{
+           justify-content: center;
+
+            li:nth-child(2) a {
+                width: 150px;
+            }
+        } 
+        .number-pages-block{
+            margin-left: 0%;
+        }
+        button{
+            margin-top: 20px;
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 475px){
+    .form-index{        
+        .input-dropdown{
+            width: 200px;
+        }
+
+        .number-pages{
+            li:nth-child(2) a {
+                width: 100px;
+            }
+        } 
+    }
+}
+
+
+@media (max-width: 400px){
+    .form-index{        
+        .input-dropdown{
+            width: 200px;
+        }
+
+        .number-pages{
+            li:nth-child(2) a {
+                width: 100px;
+            }
+        } 
+    }
+}
