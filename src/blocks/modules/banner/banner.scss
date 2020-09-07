@@ -11,6 +11,7 @@
         z-index: 1;
         width: 100%;
         height: 20px;
+        margin-left: -15px;
 
         li{
             width: 50px;
@@ -70,5 +71,54 @@
     button{
 
         z-index: 4;
+    }
+}
+
+@media (max-width: 1200px){
+    .bg-banner{
+        ol{
+            top: 265px;
+        }
+    }
+    .slide-bg {
+        p{
+            padding-bottom: 20px;
+        }
+        img{
+            position: absolute;
+            left: 65%;
+            top:9%;
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .bg-banner{
+        background-color: $pr1-light-3;
+        background-image: url(../img/bg-banner.png);
+        background-repeat: no-repeat;
+        background-size: 160%;
+    }
+    .slide-bg {
+        padding-top: 40px;
+        .title-slide{
+            font-size: 33px;
+            padding-bottom:40px;
+            span{
+            font-size: 33px;
+            }
+        }
+        p{
+            padding-bottom: 20px;
+            font-size: 16px;
+        }
+        img{
+            position: absolute;
+            top:13%;
+            width: 250px;
+        }
+        button{
+            margin-bottom: 20px;
+        } 
     }
 }
