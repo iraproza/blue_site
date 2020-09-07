@@ -1,0 +1,45 @@
+.bg-advantages{
+    background-color: $primary-1;
+    background-image: url(../img/icons_transparent.png);
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-repeat: no-repeat;
+
+    .header-advantages{
+        text-align: center;
+        h6{
+            color: $light;
+            font-family: $font-regular;
+            padding-bottom:30px;
+        }
+
+        h2{
+            color: $light;
+            padding-bottom:60px;
+        }
+    }
+    .btn-order{
+        text-align: center;
+        margin-top: 60px;
+        .btn-2{
+            font-family: $font-regular;
+        }
+    }
+}
+
+.section-advantages{
+    background-color: $light;
+    text-align: center;
+    padding: 40px 40px 20px;
+
+    &:hover{
+        background-color: $pr4-light-3;
+        transition: all 0.4s ease-in-out;;
+        transform: scale(1.1);
+    }
+
+    h5{
+        padding: 15px;
+    }
+}
