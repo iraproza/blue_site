@@ -1,0 +1,71 @@
+.bg-discounts{
+    background-color: $primary-1;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 20%;
+    background-image: url(../img/rocket.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.header-discounts{
+    text-align: center;
+    h6{
+        color: $light;
+        font-family: $font-regular;
+        padding-bottom:30px;
+    }
+
+    h2{
+        color: $light;
+        padding-bottom:25px;
+    }
+    p{
+        @include font(20px,$font-medium,$light);
+        line-height: 30px;
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+}
+
+
+.discount-program{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    padding-top: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-rows:  242px;
+
+    span{
+        display: block;
+        text-align: center;
+    }
+
+    .discount-1
+    {
+        grid-column: span 3;
+        display: flex;
+        flex-direction: column;
+    }
+    .discount-2
+    {
+        grid-column: span 3;
+    }
+    .discount-3
+    {
+        grid-column: span 4;
+        grid-row: span 2;
+    }
+    .discount-4
+    {
+        grid-column: span 3;
+    }
+    .discount-5
+    {
+        grid-column: span 3;
+    }
+}
