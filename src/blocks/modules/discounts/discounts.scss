@@ -1,25 +1,26 @@
 .bg-discounts{
     background-color: $primary-1;
     width: 100%;
-    padding-top: 60px;
-    padding-bottom: 20%;
+    padding-bottom: 15%;
     background-image: url(../img/rocket.png);
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
+    background-position: 0px 30px;
+    background-size: cover;
 }
 
 .header-discounts{
     text-align: center;
+    position: relative;
     h6{
         color: $light;
         font-family: $font-regular;
         padding-bottom:30px;
+        padding-top: 40px;
     }
 
     h2{
         color: $light;
-        padding-bottom:25px;
+        padding-bottom:30px;
     }
     p{
         @include font(20px,$font-medium,$light);
@@ -29,43 +30,313 @@
     }
 }
 
-
-.discount-program{
+.discount-program {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(10,1fr);
-    grid-auto-rows: minmax(100px,auto);
-    padding-top: 15px;
-    padding-left: 10%;
-    padding-right: 10%;
-    grid-template-rows:  242px;
+    grid-auto-rows: minmax(230px,auto);
+    margin-left: 11%;
+    margin-right: 11%;
+    position: relative;
+    margin-top: -220px;
+    margin-bottom: 50px;
+    box-shadow: 0 6px 4px -4px#cacaca;
 
     span{
         display: block;
         text-align: center;
     }
 
-    .discount-1
-    {
+    .discount-card{
         grid-column: span 3;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        background-color: $light;
+        .percent{
+            @include font(35px,$font-bold,$primary-2);
+            line-height: 40px;
+            text-transform: uppercase;
+        }
+        span:nth-child(3){
+            @include font(14px,$font-regular,$pr4-dark-1);
+            line-height: 40px;
+        }
+        .pages{
+            @include font(17px,$font-semibold,$pr1-dark-1);  
+        }
     }
-    .discount-2
-    {
-        grid-column: span 3;
+    .discount-card:nth-child(1)::after{
+      content: "";
+      width: 50%;
+      height: 1px;
+      position: absolute;
+      background-color: $pr4-light-2;
+      bottom: 49%;
+      left: 5%;
     }
-    .discount-3
-    {
+
+    .huge-discount{
         grid-column: span 4;
         grid-row: span 2;
+        background-color: $primary-1;
+        position: relative;
+
+        .huge-discount-block{
+            margin:20px;
+            border: dashed 2px $pr1-dark-1;
+            border-radius: 20px;
+            height: 92%;
+            text-align: center;
+            h4{
+                @include font(25px,$font-semibold,$light);  
+                text-transform: uppercase;
+                line-height: 34px;
+                padding: 30px 10px;
+            }
+            p{
+                @include font(18px,$font-2-lightitalic,$light); 
+                span{
+                    display: inline;
+                    @include font(18px,$font-2-italic,$light); 
+                }
+                margin: 0;
+            }
+        }
+    
+        &::after{
+            content: url(../img/Balloon.png);
+            position: absolute;
+            bottom: 2%;
+            right: -10%;
+        }
     }
-    .discount-4
-    {
-        grid-column: span 3;
+
+    .discount15{
+        margin: 0px 30px 15px 30px;
+        border: dashed 2px $light;
+        border-radius: 15px;
+        padding:23px 45px;
+        background-color: $pr1-dark-1;
+        position: relative;
+
+        &::before{
+            content: url(../img/scissors.png);
+            position: absolute;
+            top: -7%;
+            left: -4%;
+        }
+
+        &::after{
+            content: url(../img/stars.png);
+            position: absolute;
+            top: -6%;
+            right: -6%;
+        }
+
+        span:nth-child(1){
+            @include font(24px,$font-medium,$light); 
+            text-align: left;
+        }
+        span:nth-child(2),
+        span:nth-child(3){
+            @include font(62px,$font-semibold,#e2f55d); 
+            line-height: 60px;
+            text-transform: uppercase;
+        }
+        span:nth-child(4){
+            padding-top: 10px;
+            @include font(14px,$font-medium,$light); 
+        }
     }
-    .discount-5
-    {
-        grid-column: span 3;
+
+}
+
+
+@media (max-width:1370px){
+    .header-discounts{
+        h2{
+            padding-bottom: 35px;
+        }
     }
+    .discount-program {
+        margin-top: -200px;
+    }
+}
+
+@media (max-width:1231px){
+    .header-discounts{
+        h2{
+            padding-bottom: 45px;
+        }
+    }
+    .discount-program {
+        margin-top: -180px;
+    }
+
+    .huge-discount-block{
+        p{
+            font-size: 14px!important;
+            span{
+            font-size: 14px!important;
+            }
+        }
+    }
+}
+
+@media (max-width:1145px){
+    .bg-discounts{
+        background-position: -80px 30px;
+    }
+    .discount-program {
+        margin-top: -180px;
+    }
+}
+
+@media (max-width:1100px){
+    .bg-discounts{
+        background-position: -80px 30px;
+    }
+    
+    .discount-program {
+        margin-top: -150px;
+        .huge-discount{
+            .huge-discount-block{
+                margin:10px;
+                padding-top: 30px;
+                h4{
+                    font-size: 18px;
+                    padding: 15px 40px;
+                }
+                .discount15{
+                    padding:10px 20px;
+                    span:nth-child(1){
+                        @include font(18px,$font-medium,$light); 
+                        text-align: left;
+                    }
+                    span:nth-child(2),
+                    span:nth-child(3){
+                        @include font(40px,$font-semibold,#e2f55d); 
+                        line-height: 40px;
+                    }
+                    span:nth-child(4){
+                        padding-top: 10px;
+                        @include font(14px,$font-medium,$light); 
+                    }
+                }
+            }
+        &::after{
+            content: none;
+        }
+        }
+    }
+}
+
+
+@media (max-width:992px){
+    .bg-discounts{
+        background-position: -110px 30px;
+    }
+
+    .header-discounts{
+        h2{
+            font-size: 25px;
+        }
+        p{
+          font-size: 16px;  
+          line-height: 20px;
+        }
+    }
+    .discount-program {
+        grid-auto-rows: minmax(150px,auto);
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: -130px;
+    
+        .discount-card{
+            grid-column: span 2;
+        }
+        .huge-discount{
+            grid-column: span 6;
+            .huge-discount-block{
+                h4{
+                    @include font(20px,$font-semibold,$light);
+                }
+            }
+            &::after{
+                right: -8%;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){  
+    .discount-program {
+        grid-auto-rows: minmax(100px,auto);
+        margin-top: -100px;
+        span{
+            display: block;
+            text-align: center;
+        }
+
+        .discount-card{
+            grid-column: span 2;
+            .percent{
+                @include font(20px,$font-bold,$primary-2);
+                line-height: 30px;
+            }
+            span:nth-child(3){
+                @include font(12px,$font-regular,$pr4-dark-1);
+                line-height: 20px;
+            }
+            .pages{
+                @include font(14px,$font-semibold,$pr1-dark-1);  
+            }
+        }
+        .huge-discount{
+            .huge-discount-block{
+                margin:10px;
+                h4{
+                    font-size: 18px;
+                    padding: 15px 40px;
+                }
+                .discount15{
+                    padding:10px 20px;
+                    span:nth-child(1){
+                        @include font(18px,$font-medium,$light); 
+                        text-align: left;
+                    }
+                    span:nth-child(2),
+                    span:nth-child(3){
+                        @include font(40px,$font-semibold,#e2f55d); 
+                        line-height: 40px;
+                    }
+                    span:nth-child(4){
+                        padding-top: 10px;
+                        @include font(14px,$font-medium,$light); 
+                    }
+                }
+            }
+        &::after{
+            content: none;
+        }
+        }
+    }
+
+    .header-discounts{
+        h6{
+            padding-top: 25px;
+            padding-bottom: 15px;
+        }
+        h2{
+            padding-bottom: 15px;
+        }
+        p{
+            font-size: 16px;  
+            line-height: 20px;
+            padding-right: 15%;
+            padding-left: 15%;
+        }
+    }
+
 }
