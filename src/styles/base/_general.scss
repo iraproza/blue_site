@@ -727,9 +727,9 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 250px;
+
     background-color: $primary-1;
-    padding: 30px;
+    padding-right: 25%;
 
     .social-icon {
         display: flex;
