@@ -88,24 +88,26 @@
             width: 85%;
             fill: $primary-1;
         }
+
+        &:hover {
+            background-color: $pr1-dark-1;
+            transition: 0.2s;
+            
+            svg{
+                fill: $light;
+                transition: 0.2s;
+                }
+            }
+    
+        &:active svg {
+            transform: scale(0.9);
+            transition: 0.2s;
+            fill: $pr1-light-3;
+        }
     }
+
     .tel{
         width: 22px;
-    }
-
-    &:hover {
-        background-color: $pr1-dark-1;
-        transition: 0.2s;
-        svg{
-            fill: $light;
-            transition: 0.2s;
-            }
-        }
-
-    &:active svg {
-        transform: scale(0.9);
-        transition: 0.2s;
-        fill: $pr1-light-3;
     }
 }
 
@@ -121,6 +123,22 @@
             padding-bottom: 20px;
             a{
                 margin-right: 40px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width:375px){
+    .bottom-footer{
+        .social-footer{
+            padding-right: 0;
+            padding-bottom: 20px;
+            a{
+                margin-right: 20px;
             }
         }
     }
