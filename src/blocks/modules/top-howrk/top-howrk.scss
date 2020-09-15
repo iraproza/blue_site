@@ -1,0 +1,47 @@
+.bg-top-howrk{
+    background-color: $pr1-light-3;
+    background-image: url(../img/bg-banner.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: -300px bottom ;
+}
+
+.top-howrk{
+    padding-top: 75px;
+    padding-bottom: 80px;
+
+    .nav-bar{
+    padding-top: 25px;
+        background-color: transparent;
+        padding-left: 0;
+        @include font(12px, $font-regular,$primary-4);
+        li{
+            padding-left: 15px;
+            text-transform: uppercase;
+
+            &:first-child{
+                padding-left: 0;
+            }
+            a{
+                @include font(12px, $font-medium,$primary-4);
+            }
+        }
+        .active{
+            @include font(12px, $font-medium,$pr4-dark-3)
+        }
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    margin-right: 15px;
+    padding-right: 0;
+    border-right: solid 1px $primary-4;
+    border-bottom: solid 1px $primary-4;
+    transform: rotate(-45deg);
+    position: relative;
+    content: "";
+    width: 7px;
+    height: 7px;
+    top: 2px;
+}
