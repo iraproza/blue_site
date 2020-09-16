@@ -1,0 +1,70 @@
+.sale-block{
+    margin-top:50px;
+}
+
+.advantages-block-aside{
+    ul{
+        list-style-type: none;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        li{
+            @include font(14px, $font-regular,$pr4-dark-1);
+            line-height: 40px;
+            position: relative;
+            padding-left: 0px;
+            position: relative;
+            padding-left: 20px;
+            position: relative;
+            svg{
+                transform: rotate(-45deg);
+                position: absolute;
+                fill: $primary-1;
+                top: 34%;
+                left: 0;
+            }
+        }
+    }
+    button{
+        width: 100%;
+    }
+}
+
+.features-aside{
+    ul{
+        list-style-type: none;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        li{
+            @include font(14px, $font-regular,$pr4-dark-1);
+            line-height: 40px;
+            position: relative;
+            position: relative;
+            padding-left: 25px;
+            position: relative;
+            svg{
+                position: absolute;
+                fill: $light;
+                top: 35%;
+                left: 2px;
+            }
+            &::before{
+                content: '';
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+                background-color: $primary-1;
+                position: absolute;
+                top: 32%;
+                left: 0;
+                display: inline-block;
+            }
+        }
+    }
+    button{
+        width: 100%;
+    }
+}
+
+.discounts-block{
+    
+}
