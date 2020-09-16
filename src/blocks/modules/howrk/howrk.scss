@@ -1,5 +1,14 @@
 .howrk-container{
     margin-bottom: 60px;
+    &>div{
+        a:hover{
+            text-decoration: none;
+            .img-card, h5,p{
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+        }
+    }
 }
 
 .title-howrk{
