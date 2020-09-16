@@ -37,7 +37,8 @@
         &:hover{
             border:  solid 2px $pr1-light-1;
             .arrow,
-            .arrow-bottom{
+            .arrow-bottom,
+            .arrow-left{
                 border-color: $pr1-light-1;
             }
         }

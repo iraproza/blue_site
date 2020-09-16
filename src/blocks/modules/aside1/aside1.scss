@@ -1,0 +1,167 @@
+.search-block{
+    position: relative;
+    input{
+        width: 100%;
+        border: 1px solid $pr4-light-2;
+        border-radius: 3px;
+        background-color: $pr4-light-3;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding: 15px 20px 10px 20px;
+        @include font(14px, $font-regular,$primary-4);
+    }
+    svg{
+        position: absolute;
+        display: inline-block;
+        fill: $pr4-light-1;
+        width: 15px;
+        top: 34%;
+        right: 10px;
+    }
+}
+
+.title-aside{
+    @include font(15px, $font-semibold,$primary-1);
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    padding-top: 50px;
+    border-bottom: 1px solid $primary-1;
+}
+
+.categories-block{
+    ul{
+        list-style-type: none;
+        li{
+            @include font(14px, $font-regular,$pr4-dark-1);
+            line-height: 45px;
+            text-transform: uppercase;
+            padding-left: 35px;
+            background-color:$pr1-light-3;
+            border-bottom: 1px solid $pr1-light-2;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 0; 
+                height: 0;
+                top: 37%;
+                left: 5%;
+                border-top: 5px solid transparent;
+                border-left: 5px solid $primary-1;
+                border-bottom: 5px solid transparent;
+            }
+        }
+    }
+}
+
+.archive-block{
+    ul{
+        list-style-type: none;
+        li{
+            @include font(14px, $font-regular,$pr4-dark-1);
+            line-height: 45px;
+            padding-left: 20px;
+            background-color:$pr1-light-3;
+            border-bottom: 1px solid $pr1-light-2;
+        }
+    }
+}
+
+.blogs-block{
+    h6{
+        border-bottom: none;
+        padding-bottom: 0px;
+    }
+    .post{
+        border-bottom: 1px solid $primary-1;
+        display: inline-block;
+        &:last-child{
+            border-bottom: none;
+        }
+        &:hover{
+            text-decoration: none;
+            img{
+                transform: scale(1.05);
+                transition: 0.5s;
+            }
+        }
+        img{
+            margin-top: 25px;
+            margin-bottom: 15px;
+            transform: scale(1);
+            transition: 0.5s;
+        }
+        h5{
+            padding-bottom: 10px;
+        }
+        div{
+            padding-bottom: 20px;
+            span{
+                @include font(14px, $font-regular,$pr4-light-2);
+            }
+           svg{
+               padding-bottom: 2px;
+               fill: $pr4-light-2;
+           }
+        }
+    }
+}
+
+.accept-block{
+    h6{
+        margin-bottom: 25px;
+    }
+    a{
+        display: inline-block;
+        margin-bottom: 20px;
+        img{
+        max-width: 100%;
+        }
+        &:hover{
+            img{
+                transform: scale(1.02);
+                transition: 0.3s;
+            }
+        }
+    }
+    .pay-pal{
+        max-width: 105px;
+        margin-right: 10px;
+    }
+
+    .mastercard{
+        max-width: 135px;
+    }
+
+    .jcb{
+        max-width: 40px;
+        margin-right: 15px;
+    }
+    
+    .visa{
+        max-width: 75px;
+        margin-right: 20px;
+
+    }
+    
+    .co2{
+        max-width: 95px;
+    }
+    
+    .discover{
+        max-width: 105px;
+        margin-right: 15px;
+
+    }
+    .diners{
+        max-width: 105px;
+    }
+    .amex{
+        max-width: 85px;
+        margin-right: 15px;
+
+    }
+    .skrill{
+        max-width: 65px;
+    }
+}
