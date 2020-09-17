@@ -355,7 +355,7 @@ input {
 
     li a {
         @include input ($light, 1px solid $pr4-light-2, 50px, 50px);
-        line-height: 30px;
+        line-height: 35px;
         text-align: center;
         @include font(13px, $font-regular, $primary-4);
 
