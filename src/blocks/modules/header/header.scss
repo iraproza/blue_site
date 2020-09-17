@@ -181,7 +181,8 @@
 
 .dropleft{
     .burger-menu{
-        button{
+        button,
+        a{
         @include font(14px, $font-regular, $primary-1);
         text-transform: none;
         }
@@ -289,7 +290,7 @@
                 bottom: -5px;
                 padding-left: 5px;
                 letter-spacing: .5px;
-                width: 250px;
+                width: 240px;
             }
         }
     }
@@ -305,7 +306,7 @@
                 bottom: -5px;
                 padding-left: 5px;
                 letter-spacing: .5px;
-                width: 250px;
+                width: 220px;
             }
         }
     }

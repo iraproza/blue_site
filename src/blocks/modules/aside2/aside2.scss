@@ -1,5 +1,8 @@
 .sale-block{
     margin-top:50px;
+    img{
+        width: 100%;
+    }
 }
 
 .advantages-block-aside{
@@ -66,5 +69,117 @@
 }
 
 .discounts-block{
-    
+    button{
+        width: 100%;
+        margin-bottom:100px;
+    }
+    &>div{
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+    .discount{
+        display: flex;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transform: scale(1);
+        transition: 0.3s;
+
+        &:hover{
+            text-decoration: none;
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        &:last-child .description{
+            border: none;
+        }
+
+        .percent,
+        .order-discount{
+            position: relative;
+            width: 50%;
+            height: 75px;
+            span{
+                display: block;
+                text-align: center;
+                @include font(22px, $font-bold,$primary-3);
+                line-height: 22px; 
+                text-transform: uppercase;
+                width: 100%;
+
+                &:nth-child(2n){
+                    padding-top: 15px;
+                }
+            }
+            img{
+                position: absolute;
+                z-index: -1;
+                max-width: 100%;
+            }
+        }
+        .order-discount{
+            span{
+              color: $light;
+            }
+        }
+        .description{
+            position: relative;
+            border-bottom: 1px solid $pr4-light-3;
+            display: block;
+            margin-left: 15px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            width: 100%;
+            span{
+                display: block;
+                @include font(14px, $font-medium,$pr4-dark-1);
+                line-height: 25px;
+
+                &:nth-child(2n){
+                    @include font(22px, $font-semibold,$pr4-dark-3);
+                    line-height: 25px; 
+                    text-transform: uppercase;
+                }
+            }
+        }   
+    }
+}
+
+
+
+@media (max-width:991px){
+    .sale-block{
+    margin-top: 0px;
+    }
+    .discounts-block .discount .percent, 
+    .discounts-block .discount .order-discount{
+        width: 41%;
+    }
+}
+
+@media (max-width: 767px){
+    .discounts-block .discount .percent, 
+    .discounts-block .discount .order-discount{
+        width: 18%;
+    }
+}
+
+@media (max-width: 540px){
+    .discounts-block .discount .percent, 
+    .discounts-block .discount .order-discount{
+        width: 21%;
+    }
+}
+
+@media (max-width: 540px){
+    .discounts-block .discount .percent, 
+    .discounts-block .discount .order-discount{
+        width: 21%;
+    }
+}
+
+@media (max-width: 465px){
+    .discounts-block{
+        display: none;
+    }
 }
